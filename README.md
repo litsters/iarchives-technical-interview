@@ -2,7 +2,7 @@
 This repository contains code for use in iArchives technical interviews. It consists of two parts: a NodeJS express server and ReactJS app. Both will be used in the interview.
 
 # Prerequisites
-This code requires NodeJS and npm to run. If you do not have them set up on your system you will need to add them before continuing.
+This code requires NodeJS to run. If you do not have NodeJS set up on your system you will need to add it before continuing.
 
 # Running the Server
 Navigate to the server directory then follow these steps:
