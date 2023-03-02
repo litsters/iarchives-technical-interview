@@ -1,0 +1,13 @@
+# dependencies
+server/node_modules
+app/node_modules
+
+# testing
+app/coverage
+
+# production
+server/dist
+app/build
+
+# misc
+.DS_Store
