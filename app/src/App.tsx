@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { TodoItem } from './Types';
+import { TodoItem, HealthCheck } from './Types';
+import { doFetch } from './FetchWrapper';
 
 const Items:TodoItem[] = [
   { key: 1, done: false, text: 'Learn JavaScript' }
@@ -12,11 +13,9 @@ const App:React.FC = () => {
     // Do health check
     const healthCheck = async () => {
       try{
-        const response = await fetch('/health')
-        if(response.status === 200 && (await response.text()) === "Healthy\n"){
-          console.log('Health check passed')
-        }
-        else console.log('Health check failed')
+        const response = await doFetch<HealthCheck>({url:'/health', method:"GET"});
+        if(response.status === "healthy") console.log('Health check passed');
+        else console.log('Health check failed');
       }catch(e){
         console.log('An error occurred while making health check')
         console.error(e);

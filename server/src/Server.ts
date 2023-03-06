@@ -1,11 +1,12 @@
 import * as express from "express";
-import { TodoItem } from './Types'
+import { HealthCheck } from './Types'
 
 const server = express();
 const port = 8080;
 
 server.get('/health', (_,res) => {
-  res.send("Healthy\n")
+  const check:HealthCheck = { status: 'healthy' }
+  res.send(check)
 })
 
 server.listen(port, () => {
