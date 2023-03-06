@@ -8,7 +8,3 @@ export type TodoItem = {
   done: boolean;
   text: string;
 }
-
-export type HealthCheck = {
-  status: "healthy" | "unhealthy";
-}
