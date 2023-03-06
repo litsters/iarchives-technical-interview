@@ -7,8 +7,7 @@ This code requires NodeJS to run. If you do not have NodeJS set up on your syste
 # Running the Server
 Navigate to the server directory then follow these steps:
 1. Install dependencies if you have not done so already. `npm install`
-2. Build code. `npm run build`
-3. Start the server. `npm run start`
+2. Start the server. `npm run dev`
 
 The server runs on port 8080. You can verify that it is working by making a GET request on that port at `/health`. If it returns 'Healthy' the server is working and able to respond to requests.
 

@@ -1,4 +1,5 @@
 import * as express from "express";
+import { TodoItem } from './Types'
 
 const server = express();
 const port = 8080;

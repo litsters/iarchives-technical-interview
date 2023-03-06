@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TodoItem } from '../../common/types';
+import { TodoItem } from './Types';
 
 const Items:TodoItem[] = [
   { key: 1, done: false, text: 'Learn JavaScript' }
