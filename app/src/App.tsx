@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { TodoItem } from './Types';
 
-const Items:TodoItem[] = [
+const initialItems:TodoItem[] = [
   { key: 1, done: false, text: 'Learn JavaScript' }
 ]
 
 const App:React.FC = () => {
-  const [items, setItems] = useState(Items);
+  const [items, setItems] = useState(initialItems);
 
   return (
     <div>

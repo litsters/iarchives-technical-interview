@@ -19,3 +19,5 @@ To start the app, navigate to the app directory then follow these steps:
 2. Build and start the server in development mode. `npm start`
 
 There is another README in the app directory with more scripts you can use, but may not be necessary for the interview.
+
+This app is configured to proxy fetch requests to localhost:8080 by default.
